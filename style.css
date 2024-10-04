@@ -44,7 +44,7 @@ header {
       rgba(0, 0, 0, 0.3) 80%,
       rgba(0, 0, 0, 1) 100%
     ),
-    url("/Assets/the-games-bg.jpg");
+    url("./Assets/the-games-bg.jpg");
   font-family: "Open Sans", sans-serif;
 }
 
@@ -69,7 +69,7 @@ header {
       rgba(0, 0, 0, 0.3) 80%,
       rgba(0, 0, 0, 1) 100%
     ),
-    url("/Assets/Group.jpg");
+    url("./Assets/Group.jpg");
   font-family: "Open Sans", sans-serif;
 }
 
@@ -81,7 +81,7 @@ header {
       rgba(0, 0, 0, 0.3) 80%,
       rgba(0, 0, 0, 1) 100%
     ),
-    url("/Assets/requirements.png");
+    url("./Assets/requirements.png");
 }
 
 .press-quotes {
@@ -92,7 +92,7 @@ header {
       rgba(0, 0, 0, 0.3) 80%,
       rgba(0, 0, 0, 1) 100%
     ),
-    url("/Assets/Quotes.png");
+    url("./Assets/Quotes.png");
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -104,7 +104,7 @@ header {
       rgba(0, 0, 0, 0.3) 80%,
       rgba(0, 0, 0, 1) 100%
     ),
-    url("/Assets/newsletter.png");
+    url("./Assets/newsletter.png");
 }
 @media (max-width: 768px) {
   .navigation .navigation-list {
