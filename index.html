@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Assignment - 2 Rifqi</title>
+  </head>
+  <body>
+    <header class="h-full flex flex-col items-center justify-center bg-cover">
+      <nav class="w-full bg-black fixed top-0 z-10 p-6">
+        <div class="navigation flex justify-between items-center">
+          <h1 class="text-white font-bold">LOGO</h1>
+          <ul class="navigation-list flex gap-8 bg-none">
+            <li class="list-none">
+              <a href="/" class="no-underline text-white">Home</a>
+            </li>
+            <li class="list-none">
+              <a href="/" class="no-underline text-white">Work</a>
+            </li>
+            <li class="list-none">
+              <a href="/" class="no-underline text-white">Contact</a>
+            </li>
+            <li class="list-none">
+              <a href="/" class="no-underline text-white">About me</a>
+            </li>
+          </ul>
+          <div
+            class="nav-button flex flex-row gap-2 justify-center items-center mr-4 hover:cursor-pointer text-white bg-none bg-co"
+          >
+            <button>Sign Up</button>
+            <button>Login</button>
+          </div>
+          <div class="hamburger-menu md:hidden">
+            <span class="bar block w-6 h-1 m-1 bg-white"></span>
+            <span class="bar block w-6 h-1 m-1 bg-white"></span>
+            <span class="bar block w-6 h-1 m-1 bg-white"></span>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        class="header-info flex flex-col items justify-center items-center w-full text-white gap-8 mt-64"
+      >
+        <h1 class="text-7xl text-center uppercase font-bold">
+          Play Traditional Game
+        </h1>
+        <h3 class="mt-3 text-2xl font-light text-center">
+          Experience new traditional game play
+        </h3>
+        <button
+          class="bg-[#F8B13C] w-52 py-4 uppercase font-bold rounded mt-7 text-black text-sm text-center"
+        >
+          Play Now
+        </button>
+      </div>
+      <div
+        class="header-icon animate flex flex-col justify-center items-center w-full text-white mt-80 uppercase font-bold hover:cursor-pointer"
+      >
+        <h5>The Story</h5>
+        <i class="fa fa-caret-down"></i>
+      </div>
+    </header>
+
+    <section class="about bg-cover h-screen w-full">
+      <div
+        class="about-container flex flex-row justify-center items-center p-52 gap-4"
+      >
+        <div class="about-info flex flex-col text-white mt-24 font-light">
+          <h3 class="text-2xl font-normal tracking-wide">What's so special?</h3>
+          <h1 class="text-6xl font-normal uppercase tracking-wide">
+            The Games
+          </h1>
+        </div>
+        <div class="carousel-container max-w-full relative m-0 top-24">
+          <div class="carousel hidden fade">
+            <img
+              src="/Assets/main-bg.jpg"
+              alt="carousel"
+              class="align-middle w-[500px]"
+            />
+          </div>
+          <div class="hidden fade">
+            <img
+              src="./Assets/newsletter.png"
+              alt="carousel"
+              class="align-middle w-[500px]"
+            />
+          </div>
+          <div class="hidden fade">
+            <img
+              src="./Assets/requirements.png"
+              alt="carousel"
+              class="align-middle w-[500px]"
+            />
+          </div>
+          <div class="carousel fade w-[500px]">
+            <img src="./Assets/rockpaperstrategy-1600.jpg" alt="carousel" />
+          </div>
+          <a
+            class="prev cursor-pointer absolute top-2/4 w-auto p-4 mt-[-22px] text-white font-bold text-lg select-none rounded-md hover:bg-black"
+            onclick="nextCarousel(-1)"
+          >
+            ❮
+          </a>
+          <a
+            class="next cursor-pointer right-0 absolute top-2/4 w-auto p-4 mt-[-22px] text-white font-bold text-lg select-none rounded-md hover:bg-black"
+            onclick="nextCarousel(1)"
+          >
+            ❯
+          </a>
+          <div class="dot-container text-center">
+            <span
+              class="dot cursor-pointer h-4 w-4 mx-1 bg-[#bbb] rounded-full inline-block transition-all active:bg=[#717171] hover:bg=[#717171]"
+              onclick="currentCarousel(1)"
+            ></span>
+            <span
+              class="dot cursor-pointer h-4 w-4 mx-1 bg-[#bbb] rounded-full inline-block transition-all active:bg=[#717171] hover:bg=[#717171]"
+              onclick="currentCarousel(2)"
+            ></span>
+            <span
+              class="dot cursor-pointer h-4 w-4 mx-1 bg-[#bbb] rounded-full inline-block transition-all active:bg=[#717171] hover:bg=[#717171]"
+              onclick="currentCarousel(3)"
+            ></span>
+            <span
+              class="dot cursor-pointer h-4 w-4 mx-1 bg-[#bbb] rounded-full inline-block transition-all active:bg=[#717171] hover:bg=[#717171]"
+              onclick="currentCarousel(4)"
+            ></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="game-features bg-black bg-cover bg-no-repeat bg-opacity-80 h-full font-sans"
+    >
+      <div
+        class="game-features-container pt-[300px] pl-[700px] pb-[500px] flex flex-col justify-center items-center"
+      >
+        <div class="game-features-info text-white flex flex-col mb-[100px]">
+          <h3 class="tracking-[2px] text-2xl font-normal">
+            What's so special?
+          </h3>
+          <h1 class="tracking-[2px] text-[56px] uppercase font-normal">
+            Features
+          </h1>
+        </div>
+        <div
+          class="game-features-feature flex justify-center items-start gap-[40px]"
+        >
+          <div class="feature-input flex flex-col items-center">
+            <span
+              type="radio"
+              class="dot-feature dot-feature-withcolor w-[20px] h-[20px] rounded-full border border-white bg-white"
+              id="dot1"
+            ></span>
+            <div
+              class="dot-feature-line border-l-2 border-white h-[100px]"
+            ></div>
+            <span
+              type="radio"
+              class="dot-feature w-[20px] h-[20px] rounded-full border border-white"
+              id="dot2"
+            ></span>
+            <span
+              type="radio"
+              class="dot-feature w-[20px] h-[20px] rounded-full border border-white mt-[70px]"
+              id="dot3"
+            ></span>
+          </div>
+          <div class="feature-label flex flex-col">
+            <label for="dot1" class="dot-label1 uppercase text-[#ffb548]">
+              Traditional Game <br />
+              <span class="text-white normal-case">
+                If you miss your childhood, we provide many traditional games
+                here
+              </span>
+            </label>
+            <label
+              for="dot2"
+              class="dot-label2 uppercase text-[#ffb548] mt-[83.5px]"
+            >
+              Game Suit
+            </label>
+            <label
+              for="dot3"
+              class="dot-label3 uppercase text-[#ffb548] mt-[52px]"
+            >
+              TBD
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="system-req h-screen bg-cover bg-no-repeat text-white font-sans"
+    >
+      <div class="system-req-container flex flex-col">
+        <h2 class="text-center mt-[50px] font-normal tracking-[2px] text-2xl">
+          Can my computer run this game?
+        </h2>
+        <div
+          class="requirement-detail mt-[100px] ml-[100px] w-[30%] flex flex-col"
+        >
+          <h1 class="text-[56px] uppercase tracking-[2px] font-normal">
+            System <br />
+            requirements
+          </h1>
+          <div class="grid grid-cols-2 min-h-[300px] gap-4">
+            <h3 class="border border-white font-normal text-sm p-2">
+              <span class="text-[#ffb548] font-normal text-2xl">OS:</span>
+              <br />
+              Windows 7 64-bit only (No OSX support at this time)
+            </h3>
+            <h3 class="border border-white font-normal text-sm p-2">
+              <span class="text-[#ffb548] font-normal text-2xl">
+                PROCESSOR:
+              </span>
+              <br />
+              Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ
+            </h3>
+            <h3 class="border border-white font-normal text-sm p-2">
+              <span class="text-[#ffb548] font-normal text-2xl">MEMORY:</span>
+              <br />4 GB RAM
+            </h3>
+            <h3 class="border border-white font-normal text-sm p-2">
+              <span class="text-[#ffb548] font-normal text-2xl">
+                STORAGE:
+              </span>
+              <br />8 GB available space
+            </h3>
+            <h3
+              class="graphics border border-white font-normal text-sm p-2 col-span-2"
+            >
+              <span class="text-[#ffb548] font-normal text-2xl">
+                GRAPHICS:
+              </span>
+              <br />
+              NVIDIA GeForce GTX 660 2GB or AMD Radeon HD 7850 DirectX11 (Shader
+              Model 5)
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="press-quotes h-screen text-white flex justify-evenly items-center font-sans p-5"
+    >
+      <div class="quotes-info flex flex-col gap-8">
+        <h1 class="uppercase text-[56px] font-normal">Top Scores</h1>
+        <p class="font-normal text-lg">
+          This top score from various games provided on this platform
+        </p>
+        <button
+          class="border-0 bg-[#F8B13C] w-[300px] py-4 uppercase font-bold rounded-[3px] mt-8 text-black"
+        >
+          see more
+        </button>
+      </div>
+
+      <div class="flex flex-col gap-5">
+        <div class="flex flex-col gap-4 bg-[#1A1B1C] p-4 rounded-lg ml-[100px]">
+          <div class="flex justify-between items-center mr-4">
+            <div class="flex gap-4 items-center">
+              <img
+                src="./Assets/evan.png"
+                alt="Evan"
+                class="w-[38px] h-[38px] rounded-full drop-shadow-[4px_3px_1px_#f3af34]"
+              />
+              <div class="quotes-name">
+                <h3 class="text-[#F8B13C] tracking-[2px]">Evan Lathi</h3>
+                <h4 class="text-[#5F6060]">PC Gamer</h4>
+              </div>
+            </div>
+            <div class="text-[#5F6060]">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </div>
+          </div>
+          <q>One of my gaming highlights of the year.</q>
+          <h6 class="text-[#5F6060] font-light text-xs">June 18, 2021</h6>
+        </div>
+
+        <div class="flex flex-col gap-4 bg-[#1A1B1C] p-4 rounded-lg mr-[100px]">
+          <div class="flex justify-between items-center mr-4">
+            <div class="flex gap-4 items-center">
+              <img
+                src="./Assets/jada.png"
+                alt="Jada"
+                class="w-[38px] h-[38px] rounded-full drop-shadow-[4px_3px_1px_#f3af34]"
+              />
+              <div class="quotes-name">
+                <h3 class="text-[#F8B13C] tracking-[2px]">Jada Griffin</h3>
+                <h4 class="text-[#5F6060]">Nerdreactor</h4>
+              </div>
+            </div>
+            <div class="text-[#5F6060]">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </div>
+          </div>
+          <q>
+            The next big thing in the world of streaming and survival games.
+          </q>
+          <h6 class="text-[#5F6060] font-light text-xs">July 10, 2021</h6>
+        </div>
+
+        <div class="flex flex-col gap-4 bg-[#1A1B1C] p-4 rounded-lg ml-[100px]">
+          <div class="flex justify-between items-center mr-4">
+            <div class="flex gap-4 items-center">
+              <img
+                src="./Assets/aaron.png"
+                alt="Aaron"
+                class="w-[38px] h-[38px] rounded-full drop-shadow-[4px_3px_1px_#f3af34]"
+              />
+              <div class="quotes-name">
+                <h3 class="text-[#F8B13C] tracking-[2px]">Aaron Williams</h3>
+                <h4 class="text-[#5F6060]">Uproxx</h4>
+              </div>
+            </div>
+            <div class="text-[#5F6060]">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </div>
+          </div>
+          <q>
+            Snoop Dogg Playing The Wildly Entertaining 'SOS' Is Ridiculous.
+          </q>
+          <h6 class="text-[#5F6060] font-light text-xs">December 24, 2018</h6>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="newsletter-footer h-screen flex flex-col items-center justify-around text-white bg-cover bg-gradient-to-t from-black to-transparent"
+    >
+      <div class="newsletter ml-[40%]">
+        <h3 class="mt-[50px] font-normal text-[24px] leading-8">
+          Want to stay in touch ?
+        </h3>
+        <h1 class="mt-5 text-[65px] uppercase font-normal leading-tight">
+          Newsletter <br />
+          Subscribe
+        </h1>
+        <p class="mt-5 text-lg pr-40">
+          In order to start receiving our news, all you have to do is enter your
+          email address. Everything else will be taken care of by us. We will
+          send you emails containing information about game. We don't spam
+        </p>
+        <div class="newsletter-button flex mt-10 space-x-2">
+          <div class="input-email bg-[#1C1F20] p-2 rounded-md">
+            <label for="email" class="block text-sm text-[#545657]">
+              Your email address
+            </label>
+            <input
+              type="text"
+              name="email"
+              placeholder="youremail@binar.co.id"
+              class="bg-[#1C1F20] text-[#F8B13C] text-lg placeholder:text-[#F8B13C] placeholder:text-sm outline-none border-none"
+            />
+          </div>
+          <button
+            class="button-subscribe bg-[#F8B13C] text-black py-4 px-6 rounded-md uppercase font-bold"
+          >
+            Subscribe now
+          </button>
+        </div>
+      </div>
+
+      <div class="footer flex flex-col gap-3 text-sm font-normal">
+        <ul class="nav-footer flex space-x-6">
+          <li>
+            <a class="hover:underline">Main</a>
+          </li>
+          <li>
+            <a class="hover:underline">About</a>
+          </li>
+          <li>
+            <a class="hover:underline">Game Feature</a>
+          </li>
+          <li>
+            <a class="hover:underline">System Requirements</a>
+          </li>
+          <li>
+            <a class="hover:underline">Quotes</a>
+          </li>
+          <ul class="nav-icon flex space-x-6 text-lg">
+            <li>
+              <a>
+                <i
+                  class="fa fa-twitter hover:text-[#1DA1F2]"
+                  aria-hidden="true"
+                ></i>
+              </a>
+            </li>
+            <li>
+              <a>
+                <i
+                  class="fa fa-facebook hover:text-[#1877F2]"
+                  aria-hidden="true"
+                ></i>
+              </a>
+            </li>
+            <li>
+              <a>
+                <i
+                  class="fa fa-youtube-play hover:text-red-600"
+                  aria-hidden="true"
+                ></i>
+              </a>
+            </li>
+            <li>
+              <a>
+                <i
+                  class="fa fa-twitch hover:text-[#A419F7]"
+                  aria-hidden="true"
+                ></i>
+              </a>
+            </li>
+          </ul>
+        </ul>
+        <hr class="border-t border-white" />
+        <div class="footer-tm flex justify-between gap-[86px] text-sm">
+          <p>&copy; 2018 Your Games, Inc. All Rights Reserved</p>
+          <ul class="tm-list flex space-x-2 list-none">
+            <li class="privacy pr-2 border-r-2 border-white">
+              <a class="hover:underline">Privacy Policy</a>
+            </li>
+            <li>
+              <a class="hover:underline">Terms Of Services</a>
+            </li>
+            <li class="coc pl-2 border-l-2 border-white">
+              <a class="hover:underline">Code Of Conduct</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
