@@ -1,11 +1,13 @@
-# 🎮 Assignment  2 - Game Landing Page 🎮
+# 🎮 Assignment 2 - Game Landing Page 🎮
+
 A landing page for traditional games built using HTML5, CSS, Tailwind CSS, and JavaScript. The website showcases traditional games, provides system requirements, features a carousel for images, and includes an email subscription form.
 
-
 ## 🌐 Live Preview
-![Live Preview](./assets/live-preview.gif)
+
+![Live Preview](./Assets/live-preview.gif)
 
 ## 📋 Technologies Used
+
 - **HTML5**: The structure of the web page is built with HTML5.
 - **CSS3**: Used for styling the page.
 - **Tailwind CSS**: A utility-first CSS framework for creating responsive layouts.
@@ -14,6 +16,7 @@ A landing page for traditional games built using HTML5, CSS, Tailwind CSS, and J
 - **Google Fonts**: Utilized for custom fonts like "Bebas Neue" and "Open Sans."
 
 ## 🎯Features
+
 - **Responsive Navbar**: A navigation bar that adapts to various screen sizes.
 - **Header Section**: Contains a call-to-action button to "Play Now".
 - **Image Carousel**: A JavaScript-powered carousel displaying images of traditional games.
@@ -24,6 +27,7 @@ A landing page for traditional games built using HTML5, CSS, Tailwind CSS, and J
 - **Footer Section**: Links to the main sections of the page and social media icons.
 
 ## 📂 Folder Structure
+
 ```bash
 ├── assets/
 │   ├── avatar-*.svg     # avatar image on the website
@@ -37,8 +41,8 @@ A landing page for traditional games built using HTML5, CSS, Tailwind CSS, and J
 
 - [@Muhammad Rifqi Setiawan](https://github.com/rifqi142)
 
-
 ## ⚙️ Installation
+
 ### 1. Clone the repository:
 
 ```bash
@@ -46,6 +50,7 @@ git clone https://github.com/rifqi142/assignment2_muhrifqis
 ```
 
 ### 2. Navigate to the project directory:
+
 ```bash
 cd assignment2_muhrifqis
 ```
@@ -54,6 +59,6 @@ cd assignment2_muhrifqis
 
 ### 4. Enjoy game Landing Page! 🎉
 
-## 🔗 Live Preview 
-Check out my portfolio website at: https://rifqi142.github.io/Assignment2_MuhRifqis/ 
+## 🔗 Live Preview
 
+Check out my portfolio website at: https://rifqi142.github.io/Assignment2_MuhRifqis/
